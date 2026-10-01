@@ -6,6 +6,8 @@ const WHATSAPP =
   "https://wa.me/447387940626?text=" +
   encodeURIComponent("Hello Doves, I'd like to know more about the Global Funeral Plan.");
 
+const APPLY = "https://www.doveslife.co.uk/apply/lead";
+
 const slides = [
   { image: "/assets/family-together.jpg", position: "center 22%" },
   { image: "/assets/family-home.jpg", position: "center" },
@@ -80,7 +82,7 @@ export default function HomePage() {
   }, [slide]);
 
   useEffect(() => {
-    const nodes = document.querySelectorAll(".observe");
+    const nodes = document.querySelectorAll(".observe:not(.show)");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -94,7 +96,7 @@ export default function HomePage() {
     );
     nodes.forEach((node) => observer.observe(node));
     return () => observer.disconnect();
-  }, []);
+  }, [sent, slide, scrolled, menuOpen, chatOpen]);
 
   function closeMenu() {
     setMenuOpen(false);
@@ -148,7 +150,8 @@ export default function HomePage() {
                 <a href={href} onClick={closeMenu}>{label}</a>
               </li>
             ))}
-            <li><a className="btn" href="#contact" onClick={closeMenu}>Enquire</a></li>
+            <li><a className="btn outline" href="#contact" onClick={closeMenu}>Enquire</a></li>
+            <li><a className="btn" href={APPLY}>Apply</a></li>
           </ul>
         </div>
       </header>
@@ -170,7 +173,8 @@ export default function HomePage() {
             <h1 className="reveal delay-1">Bringing peace of mind across borders</h1>
             <p className="reveal delay-2">We assist bereaved families to repatriate or expatriate their loved ones, and we look after the documentation from start to finish.</p>
             <div className="hero-actions reveal delay-3">
-              <a className="btn" href="#repatriation">View repatriation cover</a>
+              <a className="btn" href={APPLY}>Apply Now</a>
+              <a className="btn ghost" href="#repatriation">View repatriation cover</a>
               <a className="btn ghost" href="#diaspora">See diaspora benefits</a>
             </div>
           </div>
@@ -240,7 +244,7 @@ export default function HomePage() {
               <p className="eyebrow">Diaspora plan</p>
               <h2>Bringing peace of mind across borders</h2>
               <p>Coverage is arranged for Zimbabweans living away from home, with the principal member in the diaspora paying the premium. Beneficiaries in Zimbabwe can be added on local deluxe plan rates.</p>
-              <a className="btn light" href="#eligibility">Check eligibility</a>
+              <a className="btn light" href={APPLY}>Apply Now</a>
             </div>
             <div className="benefit-grid">
               <article className="panel observe">
@@ -309,7 +313,7 @@ export default function HomePage() {
                 <li><a href="mailto:contactcenter@doves.co.zw">contactcenter@doves.co.zw</a></li>
               </ul>
             </div>
-            <form className={sent ? "card form observe sent" : "card form observe"} onSubmit={submitEnquiry} noValidate>
+            <form className={sent ? "card form sent" : "card form observe"} onSubmit={submitEnquiry} noValidate>
               <h3>Send an enquiry</h3>
               <div className="fields">
                 <label>Full name
@@ -361,6 +365,7 @@ export default function HomePage() {
               <li><a href="#diaspora">Diaspora plan</a></li>
               <li><a href="#eligibility">Eligibility</a></li>
               <li><a href="#remittances">International remittances</a></li>
+              <li><a href={APPLY}>Apply for cover</a></li>
             </ul>
           </div>
           <div>

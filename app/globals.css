@@ -154,6 +154,17 @@ p {
   color: var(--blue-deep);
 }
 
+.btn.outline {
+  background: transparent;
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.btn.outline:hover {
+  background: var(--blue);
+  color: white;
+}
+
 .btn.light {
   background: white;
   color: var(--blue-deep);
@@ -230,6 +241,18 @@ header.site.scrolled {
   font-weight: 500;
   color: var(--blue-ink);
   position: relative;
+}
+
+.menu a.btn {
+  color: white;
+}
+
+.menu a.btn.outline {
+  color: var(--blue);
+}
+
+.menu a.btn.outline:hover {
+  color: white;
 }
 
 .menu a:not(.btn)::after {
