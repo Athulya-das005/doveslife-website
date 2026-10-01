@@ -118,7 +118,7 @@ export default function HomePage() {
         <div className="wrap">
           <span>Open 24/7 for funeral services</span>
           <div className="topbar-links">
-            <a href="tel:+263242774013">+263 242 774013/6</a>
+            <a href="tel:+263242774013">+44 20 3885 1002</a>
             <a href="mailto:contactcenter@doves.co.zw">contactcenter@doves.co.zw</a>
           </div>
         </div>
@@ -327,7 +327,7 @@ export default function HomePage() {
               <h2>Speak with us</h2>
               <p>Unit 17f, The Lansbury Estates 102 Lower Guildford Road, Knaphill, Woking, Surrey, England, GU21 2EP</p>
               <ul className="contact-list">
-                <li><a href="tel:+263242774013">+263 242 774013/6</a></li>
+                <li><a href="tel:+263242774013">+44 20 3885 1002</a></li>
                 <li><a href={WHATSAPP} target="_blank" rel="noopener">WhatsApp +44 7387 940626</a></li>
                 <li><a href="mailto:contactcenter@doves.co.zw">contactcenter@doves.co.zw</a></li>
               </ul>
@@ -391,7 +391,7 @@ export default function HomePage() {
             <h3>Contact details</h3>
             <ul>
               <p>Unit 17f, The Lansbury Estates 102 Lower Guildford Road, Knaphill, Woking, Surrey, England, GU21 2EP</p>
-              <li><a href="tel:+263242774013">+263 242 774013/6</a></li>
+              <li><a href="tel:+263242774013">+44 20 3885 1002</a></li>
               <li><a href={WHATSAPP} target="_blank" rel="noopener">WhatsApp +44 7387 940626</a></li>
               <li><a href="mailto:contactcenter@doves.co.zw">contactcenter@doves.co.zw</a></li>
               <li>Open 24/7 for funeral services</li>
