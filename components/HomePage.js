@@ -150,8 +150,27 @@ export default function HomePage() {
                 <a href={href} onClick={closeMenu}>{label}</a>
               </li>
             ))}
-            <li><a className="btn outline" href="#contact" onClick={closeMenu}>Enquire</a></li>
-            <li><a className="btn" href={APPLY}>Apply</a></li>
+           <li>
+  <a className="btn outline" href="#contact" onClick={closeMenu}>
+    Enquire
+  </a>
+</li>
+
+<li>
+  <a
+    className="btn"
+    href="https://apply.doveslife.co.uk/portal/login"
+    onClick={closeMenu}
+  >
+    Login
+  </a>
+</li>
+
+<li>
+  <a className="btn" href={APPLY} onClick={closeMenu}>
+    Apply
+  </a>
+</li>
           </ul>
         </div>
       </header>
