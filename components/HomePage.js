@@ -6,7 +6,7 @@ const WHATSAPP =
   "https://wa.me/447387940626?text=" +
   encodeURIComponent("Hello Doves, I'd like to know more about the Global Funeral Plan.");
 
-const APPLY = "https://apply.doveslife.co.uk";
+const APPLY = "https://www.doveslife.co.uk/apply/lead";
 
 const slides = [
   { image: "/assets/family-together.jpg", position: "center 22%" },
