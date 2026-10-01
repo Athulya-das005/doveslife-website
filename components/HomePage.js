@@ -325,7 +325,7 @@ export default function HomePage() {
             <div className="card observe">
               <p className="eyebrow">Contact</p>
               <h2>Speak with us</h2>
-              <p>157 &amp; 159 Harare St, Harare. Funeral services are open 24/7.</p>
+              <p>Unit 17f, The Lansbury Estates 102 Lower Guildford Road, Knaphill, Woking, Surrey, England, GU21 2EP</p>
               <ul className="contact-list">
                 <li><a href="tel:+263242774013">+263 242 774013/6</a></li>
                 <li><a href={WHATSAPP} target="_blank" rel="noopener">WhatsApp +44 7387 940626</a></li>
@@ -390,7 +390,7 @@ export default function HomePage() {
           <div>
             <h3>Contact details</h3>
             <ul>
-              <li>157 &amp; 159 Harare St, Harare</li>
+              <p>Unit 17f, The Lansbury Estates 102 Lower Guildford Road, Knaphill, Woking, Surrey, England, GU21 2EP</p>
               <li><a href="tel:+263242774013">+263 242 774013/6</a></li>
               <li><a href={WHATSAPP} target="_blank" rel="noopener">WhatsApp +44 7387 940626</a></li>
               <li><a href="mailto:contactcenter@doves.co.zw">contactcenter@doves.co.zw</a></li>
