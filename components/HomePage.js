@@ -142,7 +142,7 @@ export default function HomePage() {
             {[
               ["#home", "Home"],
               ["#repatriation", "Repatriation"],
-              ["#diaspora", "Diaspora Plan"],
+              ["#diaspora", "Doves Global Plan"],
               ["#remittances", "Remittances"],
               ["#contact", "Contact"],
             ].map(([href, label]) => (
@@ -188,13 +188,13 @@ export default function HomePage() {
           </div>
           <div className="hero-shade" />
           <div className="wrap hero-content">
-            <p className="eyebrow reveal">Diaspora plan</p>
+            <p className="eyebrow reveal">Doves Global Plan</p>
             <h1 className="reveal delay-1">Bringing peace of mind across borders</h1>
             <p className="reveal delay-2">We assist bereaved families to repatriate or expatriate their loved ones, and we look after the documentation from start to finish.</p>
             <div className="hero-actions reveal delay-3">
               <a className="btn" href={APPLY}>Apply Now</a>
               <a className="btn ghost" href="#repatriation">View repatriation cover</a>
-              <a className="btn ghost" href="#diaspora">See diaspora benefits</a>
+              <a className="btn ghost" href="#diaspora">See Doves Global Plan benefits</a>
             </div>
           </div>
           <div className="dots" role="tablist" aria-label="Hero slides">
@@ -260,7 +260,7 @@ export default function HomePage() {
         <section className="section band" id="diaspora">
           <div className="wrap split">
             <div className="observe">
-              <p className="eyebrow">Diaspora plan</p>
+              <p className="eyebrow">Doves Global Plan</p>
               <h2>Bringing peace of mind across borders</h2>
               <p>Coverage is arranged for Zimbabweans living away from home, with the principal member in the diaspora paying the premium. Beneficiaries in Zimbabwe can be added on local deluxe plan rates.</p>
               <a className="btn light" href={APPLY}>Apply Now</a>
@@ -349,7 +349,7 @@ export default function HomePage() {
                 <select name="topic" required defaultValue="">
                   <option value="">Choose a service</option>
                   <option>Repatriation &amp; expatriation</option>
-                  <option>Diaspora plan</option>
+                  <option>Doves Global Plan</option>
                   <option>Beneficiaries in Zimbabwe</option>
                   <option>International remittances</option>
                 </select>
@@ -381,7 +381,7 @@ export default function HomePage() {
             <h3>On this site</h3>
             <ul>
               <li><a href="#repatriation">Repatriation &amp; expatriation</a></li>
-              <li><a href="#diaspora">Diaspora plan</a></li>
+              <li><a href="#diaspora">Doves Global Plan</a></li>
               <li><a href="#eligibility">Eligibility</a></li>
               <li><a href="#remittances">International remittances</a></li>
               <li><a href={APPLY}>Apply for cover</a></li>
