@@ -99,8 +99,26 @@ const structuredData = {
         "@type": "PostalAddress",
         streetAddress: organization.streetAddress,
         addressLocality: organization.addressLocality,
+        addressRegion: organization.addressRegion,
+        postalCode: organization.postalCode,
         addressCountry: organization.addressCountry,
       },
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: organization.telephone,
+          contactType: "customer service",
+          areaServed: "GB",
+          availableLanguage: "English",
+        },
+        {
+          "@type": "ContactPoint",
+          telephone: organization.mobile,
+          contactType: "customer service",
+          areaServed: "GB",
+          availableLanguage: "English",
+        },
+      ],
       sameAs: ["https://doves.co.zw/", "https://www.doveslife.co.uk/"],
     },
     {
