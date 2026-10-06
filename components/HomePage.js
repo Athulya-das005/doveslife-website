@@ -312,17 +312,6 @@ export default function HomePage() {
     <>
       <a className="skip" href="#main">Skip to content</a>
 
-      <div className="topbar">
-        <div className="wrap">
-          <span>Open 24/7 for funeral services</span>
-          <div className="topbar-links">
-            <a href="tel:+442038851002">Landline +44 20 3885 1002</a>
-            <a href="tel:+447387940626">Mobile +44 7387 940626</a>
-            <a href="mailto:contactcenter@doves.co.zw">contactcenter@doves.co.zw</a>
-          </div>
-        </div>
-      </div>
-
       <header className={scrolled ? "site scrolled" : "site"}>
         <div className="wrap nav">
           <a className="logo" href="#home" aria-label="Doves home" onClick={closeMenu}>

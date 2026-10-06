@@ -69,7 +69,7 @@ p {
 .skip {
   position: absolute;
   left: 12px;
-  top: -40px;
+  top: -80px;
   background: var(--blue);
   color: white;
   padding: 8px 12px;
@@ -172,30 +172,6 @@ p {
 
 .btn.light:hover {
   background: #eef5ff;
-}
-
-.topbar {
-  background: var(--blue-ink);
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 0.86rem;
-}
-
-.topbar .wrap {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  align-items: center;
-  min-height: 42px;
-}
-
-.topbar a:hover {
-  color: white;
-}
-
-.topbar-links {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
 }
 
 header.site {
@@ -1352,7 +1328,6 @@ html.js .observe.show {
 }
 
 @media (max-width: 680px) {
-  .topbar .wrap,
   .legal {
     flex-direction: column;
     align-items: flex-start;
